@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="78B-Yi-PJj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Fact View Controller-->
+        <scene sceneID="qxE-1p-ppo">
+            <objects>
+                <viewController id="78B-Yi-PJj" customClass="FactViewController" customModule="ChuckNorrisFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GnX-Yz-fGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ieq-Gq-0FO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fgA-Os-S9h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M60-VT-GTg">
+                                <rect key="frame" x="8" y="28" width="584" height="514"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejT-3t-zhc">
+                                <rect key="frame" x="282" y="550" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="2QP-OE-5ll"/>
+                                    <constraint firstAttribute="height" constant="30" id="u1t-i2-aZf"/>
+                                </constraints>
+                                <state key="normal" title="FACT"/>
+                                <connections>
+                                    <action selector="factButtonTapped:" destination="78B-Yi-PJj" eventType="touchUpInside" id="Ph2-PV-74h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M60-VT-GTg" firstAttribute="leading" secondItem="fgA-Os-S9h" secondAttribute="leading" constant="8" id="0Lx-C2-qlO"/>
+                            <constraint firstItem="ieq-Gq-0FO" firstAttribute="top" secondItem="ejT-3t-zhc" secondAttribute="bottom" constant="20" id="L1i-NV-6iE"/>
+                            <constraint firstAttribute="trailing" secondItem="M60-VT-GTg" secondAttribute="trailing" constant="8" id="RcE-x2-SRB"/>
+                            <constraint firstItem="M60-VT-GTg" firstAttribute="top" secondItem="GnX-Yz-fGi" secondAttribute="bottom" constant="8" id="o0u-5f-D1A"/>
+                            <constraint firstItem="ejT-3t-zhc" firstAttribute="centerX" secondItem="fgA-Os-S9h" secondAttribute="centerX" id="sAv-c6-Uyg"/>
+                            <constraint firstItem="ejT-3t-zhc" firstAttribute="top" secondItem="M60-VT-GTg" secondAttribute="bottom" constant="8" id="vnn-fc-A9V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="factLabel" destination="M60-VT-GTg" id="8Nm-Gu-zQo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n5-A7-KOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="383"/>
+        </scene>
+    </scenes>
+</document>
